@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <title>Lab5</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</head>
+
+<body>
+<header>
+  <p>Група: ТР-25<span id="group"></span></p>
+  <p>ПІБ: Кондратенко Сергій Сергійович<span id="fullName"></span></p>
+  <p>Варіант: 9<span id="variant"></span></p>
+  <p>Завдання: Основи JS. Змінні, типи даних, функції.<span id="task"></span></p>
+</header>
+
+<div class="container">
+  <h2 id="testName">Тест з основ js: змінні, типи даних, функції</h2>
+  <form id="userForm">
+    <label for="userName">Прізвище та ім'я:</label>
+    <input type="text" id="userName" name="userName" required>
+    <label for="userGroup">Група:</label>
+    <input type="text" id="userGroup" name="userGroup" required>
+    <button type="button" onclick="startTest()">Почати тест</button>
+  </form>
+
+  <div id="questionContainer">
+    <h3 id="question"></h3>
+    <div id="options"></div>
+    <button type="button" id="answerButton" style="display: none;" onclick="nextQuestion()">Відповісти</button>
+  </div>
+  <div id="testResults"></div>
+</div>
+</body>
+
+</html>
